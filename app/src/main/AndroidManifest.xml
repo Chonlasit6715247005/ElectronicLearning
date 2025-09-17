@@ -13,6 +13,15 @@
         android:theme="@style/Theme.ElectronicLearning"
         tools:targetApi="31">
         <activity
+            android:name=".pmos"
+            android:exported="false" />
+        <activity
+            android:name=".nmos"
+            android:exported="false" />
+        <activity
+            android:name=".nMOS"
+            android:exported="false" />
+        <activity
             android:name=".pnp"
             android:exported="false" />
         <activity

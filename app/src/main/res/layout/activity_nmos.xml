@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nmos">
+
+    <!-- หัวข้อ -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NMOS Transistor (MOSFET)"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- รูปเล็กด้านบน -->
+    <ImageView
+        android:id="@+id/nmos"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/nmos"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- คำอธิบาย -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="ทรานซิสเตอร์ขยายกำลังไฟฟ้าและสามารถทำหน้าที่เป็นสวิตช์ควบคุมด้วยไฟฟ้า MOSFET ย่อมาจาก metal-oxide-semiconductor field-effect transistor ทรานซิสเตอร์สนามไฟฟ้า (FET) มีประสิทธิภาพมากกว่า BJT เนื่องจากใช้สนามไฟฟ้าเพื่อควบคุมการไหลของกระแสไฟฟ้า"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nmos" />
+
+    <!-- รูปงาน/วงจร: ซูม/ลากได้ -->
+    <com.example.electroniclearning.ZoomImageView
+        android:id="@+id/nmoswork"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/nmoswork"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button" />
+
+    <!-- ปุ่ม Back -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
