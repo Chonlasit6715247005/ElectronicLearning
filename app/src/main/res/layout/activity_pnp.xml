@@ -6,14 +6,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    tools:context=".PnpActivity">
 
     <!-- หัวข้อ -->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NPN Transistor (BJT)"
+        android:text="PNP Transistor (BJT)"
         android:textStyle="bold"
         android:textSize="18sp"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,10 +23,10 @@
 
     <!-- ไอคอน/รูปเล็กด้านบน -->
     <ImageView
-        android:id="@+id/npn"
+        android:id="@+id/pnp"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/npn"
+        android:src="@drawable/pnp"
         android:contentDescription="@string/app_name"
         app:layout_constraintTop_toBottomOf="@id/textView2"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,20 +39,20 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:text="ทรานซิสเตอร์ทำหน้าที่ขยายกำลังไฟฟ้าและทำหน้าที่เป็นสวิตช์ควบคุมด้วยไฟฟ้า ทรานซิสเตอร์แบบไบโพลาร์จังก์ชัน (BJT) ประกอบด้วยซิลิคอนสามชั้น ซึ่งการจัดเรียงของชั้นเหล่านี้กำหนดทิศทางการไหลของกระแสไฟฟ้า"
-        app:layout_constraintTop_toBottomOf="@id/npn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/pnp" />
 
     <!-- รูปงานทดลอง: ซูม/ลากได้ด้วย ZoomImageView -->
     <com.example.electroniclearning.ZoomImageView
-        android:id="@+id/npnwork"
+        android:id="@+id/pnpwork"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="16dp"
-        android:src="@drawable/npnwork"
+        android:src="@drawable/pnpwork"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
         android:contentDescription="@string/app_name"

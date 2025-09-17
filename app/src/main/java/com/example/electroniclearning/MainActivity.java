@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         logo = findViewById(R.id.imageView);
-        logo.setImageResource(R.drawable.logo);
+        logo.setImageResource(R.drawable.npn);
                 logo.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -32,5 +32,14 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(aboutMe);
                     }
                 });
+        logo = findViewById(R.id.imageView1);
+        logo.setImageResource(R.drawable.pnp);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent aboutMe = new Intent(getApplicationContext(),pnp.class);
+                startActivity(aboutMe);
+            }
+        });
     }
 }
