@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    // ถ้าโปรเจ็กต์นี้มีไฟล์ Kotlin ให้เติมบรรทัดนี้ด้วย:
+    // alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -12,7 +14,6 @@ android {
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -25,10 +26,20 @@ android {
             )
         }
     }
+
+    // แก้เคส resource แปลก ๆ ระหว่าง merge
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    // ถ้ามี Kotlin ให้เปิดด้วย
+    // kotlinOptions { jvmTarget = "11" }
 }
 
 dependencies {
@@ -36,6 +47,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

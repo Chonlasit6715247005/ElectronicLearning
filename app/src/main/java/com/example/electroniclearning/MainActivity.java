@@ -41,5 +41,32 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(aboutMe);
             }
         });
+        logo = findViewById(R.id.imageView2);
+        logo.setImageResource(R.drawable.nmos);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent aboutMe = new Intent(getApplicationContext(),nmos.class);
+                startActivity(aboutMe);
+            }
+        });
+        logo = findViewById(R.id.imageView3);
+        logo.setImageResource(R.drawable.pmos);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent aboutMe = new Intent(getApplicationContext(),pmos.class);
+                startActivity(aboutMe);
+            }
+        });
+        logo = findViewById(R.id.imageView4);
+        logo.setImageResource(R.drawable.spdt);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent aboutMe = new Intent(getApplicationContext(),spdt.class);
+                startActivity(aboutMe);
+            }
+        });
     }
 }
