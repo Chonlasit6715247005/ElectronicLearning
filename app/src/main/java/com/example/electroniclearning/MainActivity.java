@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(aboutMe);
             }
         });
+<<<<<<< HEAD
         logo = findViewById(R.id.imageView4);
         logo.setImageResource(R.drawable.spdt);
         logo.setOnClickListener(new View.OnClickListener() {
@@ -68,5 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(aboutMe);
             }
         });
+=======
+>>>>>>> origin/master
     }
 }

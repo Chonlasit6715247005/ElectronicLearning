@@ -13,9 +13,12 @@
         android:theme="@style/Theme.ElectronicLearning"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".spdt"
             android:exported="false" />
         <activity
+=======
+>>>>>>> origin/master
             android:name=".pmos"
             android:exported="false" />
         <activity
