@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class main1 extends AppCompatActivity {
     ImageView logo;
+    Button page1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,6 +135,14 @@ public class main1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent aboutMe = new Intent(getApplicationContext(),motorservodfrobotkit.class);
+                startActivity(aboutMe);
+            }
+        });
+        page1 = findViewById(R.id.button2);
+        page1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent aboutMe = new Intent(getApplicationContext(),main2.class);
                 startActivity(aboutMe);
             }
         });
