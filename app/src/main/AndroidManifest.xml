@@ -13,71 +13,23 @@
         android:theme="@style/Theme.ElectronicLearning"
         tools:targetApi="31">
         <activity
-            android:name=".neopixelstrip20"
+            android:name=".motorservodfrobotkit"
             android:exported="false" />
         <activity
-            android:name=".neopixelstrip16"
+            android:name=".motordcencodersmall"
             android:exported="false" />
         <activity
-            android:name=".neopixelstrip12"
+            android:name=".motordcarduinokit"
             android:exported="false" />
         <activity
-            android:name=".neopixelstrip10"
+            android:name=".motorDCEncoderSmall"
             android:exported="false" />
         <activity
-            android:name=".neopixelstrip8"
+            android:name=".motorDCArduinoKit"
             android:exported="false" />
         <activity
-            android:name=".neopixelstrip6"
-            android:exported="false" />
-        <activity
-            android:name=".neopixelstrip4"
-            android:exported="false" />
-        <activity
-            android:name=".neopixel24"
-            android:exported="false" />
-        <activity
-            android:name=".main1"
-            android:exported="false" />
-        <activity
-            android:name=".neopixel16"
-            android:exported="false" />
-        <activity
-            android:name=".neopixel12"
-            android:exported="false" />
-        <activity
-            android:name=".neopixel"
-            android:exported="false" />
-        <activity
-            android:name=".light"
-            android:exported="false" />
-        <activity
-            android:name=".ledrgb"
-            android:exported="false" />
-        <activity
-            android:name=".led"
-            android:exported="false" />
-        <activity
-            android:name=".dpdt"
-            android:exported="false" />
-        <activity
-            android:name=".spdt"
-            android:exported="false" />
-        <activity
-            android:name=".pmos"
-            android:exported="false" />
-        <activity
-            android:name=".nmos"
-            android:exported="false" />
-        <activity
-            android:name=".nMOS"
-            android:exported="false" />
-        <activity
-            android:name=".pnp"
-            android:exported="false" />
-        <activity
-            android:name=".SecondActivity"
-            android:exported="false" />
+            android:name=".motorvibration"
+            android:exported="false" /> <!-- Launcher -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -86,7 +38,70 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- หน้ารอง -->
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" /> <!-- Basic components -->
+        <activity
+            android:name=".dpdt"
+            android:exported="false" />
+        <activity
+            android:name=".led"
+            android:exported="false" />
+        <activity
+            android:name=".ledrgb"
+            android:exported="false" />
+        <activity
+            android:name=".light"
+            android:exported="false" />
+        <activity
+            android:name=".main1"
+            android:exported="false" />
+        <activity
+            android:name=".nmos"
+            android:exported="false" />
+        <activity
+            android:name=".pmos"
+            android:exported="false" />
+        <activity
+            android:name=".pnp"
+            android:exported="false" />
+        <activity
+            android:name=".spdt"
+            android:exported="false" /> <!-- NeoPixel (rings/strip) -->
+        <activity
+            android:name=".neopixel"
+            android:exported="false" />
+        <activity
+            android:name=".neopixel12"
+            android:exported="false" />
+        <activity
+            android:name=".neopixel16"
+            android:exported="false" />
+        <activity
+            android:name=".neopixel24"
+            android:exported="false" />
+        <activity
+            android:name=".neopixelstrip4"
+            android:exported="false" />
+        <activity
+            android:name=".neopixelstrip6"
+            android:exported="false" />
+        <activity
+            android:name=".neopixelstrip8"
+            android:exported="false" />
+        <activity
+            android:name=".neopixelstrip10"
+            android:exported="false" />
+        <activity
+            android:name=".neopixelstrip12"
+            android:exported="false" />
+        <activity
+            android:name=".neopixelstrip16"
+            android:exported="false" />
+        <activity
+            android:name=".neopixelstrip20"
+            android:exported="false" />
     </application>
 
 </manifest>

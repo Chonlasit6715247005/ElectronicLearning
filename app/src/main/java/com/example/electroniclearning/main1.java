@@ -101,5 +101,41 @@ public class main1 extends AppCompatActivity {
                 startActivity(aboutMe);
             }
         });
+        logo = findViewById(R.id.imageView20);
+        logo.setImageResource(R.drawable.motorvibration);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent aboutMe = new Intent(getApplicationContext(),motorvibration.class);
+                startActivity(aboutMe);
+            }
+        });
+        logo = findViewById(R.id.imageView21);
+        logo.setImageResource(R.drawable.motordcarduinokit);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent aboutMe = new Intent(getApplicationContext(),motordcarduinokit.class);
+                startActivity(aboutMe);
+            }
+        });
+        logo = findViewById(R.id.imageView22);
+        logo.setImageResource(R.drawable.motordcencodersmall);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent aboutMe = new Intent(getApplicationContext(),motordcencodersmall.class);
+                startActivity(aboutMe);
+            }
+        });
+        logo = findViewById(R.id.imageView23);
+        logo.setImageResource(R.drawable.motorservodfrobotkit);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent aboutMe = new Intent(getApplicationContext(),motorservodfrobotkit.class);
+                startActivity(aboutMe);
+            }
+        });
     }
 }
